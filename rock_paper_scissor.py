@@ -31,6 +31,7 @@ while True:
         continue
     break
     
+    
 for game in range(1,6):
     user = int(input("어떤 것을 내실래요? (1: 가위 / 2: 바위 / 3: 보): "))
     if user < 2:
