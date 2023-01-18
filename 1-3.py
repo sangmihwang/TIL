@@ -1,5 +1,5 @@
 # 끝말잇기 -> 몇 번째 사람이 탈락하는 지 확인하는 코드를 작성하시오.
-
+words = ["round" , "dream", "magnet" , "tweet" , "tweet", "trick", "kiwi"]
 # 과거에 입력된 단어들
 before_words = []
 
