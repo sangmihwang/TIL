@@ -1,10 +1,11 @@
-# li = [1,2,3,4]
+li = [1,2,3,4]
 
-# def func():
-#     li = [5,6,7]
+def func():
+    li = [5,6,7]
+    print(li)
 
-# func()
-# print(li)
+func()
+print(li)
 
 
 def func1():
