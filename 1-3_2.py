@@ -12,11 +12,26 @@ def func1():
     x = 10
 
     def func2():
-        nonlocal x
-
         x = 20
+        
+        def func3():
+            nonlocal x
+            x += 10
+            print(x)
+
+        func3()
+        print(x)
+
     func2()
     print(x)
 
 func1()
-print(x)
+
+
+
+y = 10
+def func(y):
+    y += 20
+    return y
+
+new_y = func(y)

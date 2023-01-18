@@ -14,3 +14,11 @@ def func1() :
 
 func1()
 print(a)
+
+
+# 아스키코드
+
+a = 'a'
+
+for i in range(26):
+    print(ord('A') + i, end =' ')
