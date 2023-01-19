@@ -1,2 +1,2 @@
 # Exercise
-## SAFFY Python Lacture
+## SAFFY Python Lecture
