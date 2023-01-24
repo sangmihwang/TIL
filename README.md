@@ -1,2 +1,2 @@
 # Exercise
-## SAFFY Python Lecture
+## SSAFY Python Lecture
