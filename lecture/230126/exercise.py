@@ -15,12 +15,16 @@ li = [[9, "가"], [2, "바"], [7, "다"], [5, "나"]]
 
 # def func(x):
 #     return x[1]
-
+   
 # li.sort(key = func)
 li.sort(key = lambda element: element[1])
 
 print(li)
 
 
+arr1 = [1,2,3]
+arr2 = arr1
+arr1.append(4)
+print(arr2)
 
 

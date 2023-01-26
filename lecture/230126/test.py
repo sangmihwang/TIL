@@ -69,8 +69,8 @@ print(scores)
 
 a = 10
 b = a
-b = 5
-print(a)
+a = 7
+print(b)
 
 # 함수에서 ㅂㄴ수의 복사
 def func(num):
