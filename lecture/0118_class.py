@@ -9,11 +9,11 @@ def func1() :
         a = 20
         print(a)
     
-    func2()
-    print(a)
+    func2()   # 20
+    print(a)  
 
-func1()
-print(a)
+func1()   # 10
+print(a)  # 0
 
 
 # 아스키코드
