@@ -15,3 +15,6 @@ for i in range(N):
             ni, nj = i + di, j +dj
             if 0 <= ni < N and 0 <= nj < N:
                 print(i, j, ni, nj)
+
+
+    
