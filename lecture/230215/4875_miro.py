@@ -7,7 +7,7 @@ for t in range(1, T+1):
         for j in range(N):
             if miro[i][j] == 2:
                 Si, Sj = i, j           # 시작점
-    stack = []                          #   현재 위치
+    stack = []                          # 현재 위치
     stack.append((Si, Sj))
     flag = False
     while stack:
