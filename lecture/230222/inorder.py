@@ -3,8 +3,7 @@ def inorder(i, N):
         inorder(2*i, N)             # 왼쪽으로 들어가서 전개
         tree.append(i)
         inorder(2*i + 1, N)         # 오른쪽으로 들어가서 전개
-    else:
-        return
+    return
 
 for t in range(1, 11):
     N = int(input())
@@ -14,8 +13,8 @@ for t in range(1, 11):
         dic[int(letter[0])] = letter[1]     # 첫번째 값과 두번째 값만 취함
 
     tree = []
-    inorder(1, N)
     ans = ''
+    inorder(1, N)
 
     for x in tree:
         ans += dic[x]
