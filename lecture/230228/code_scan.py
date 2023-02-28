@@ -71,6 +71,7 @@ for t in range(1, T+1):
                 r = count[i][idx]
         for idx in count[i]:
             count[i][idx] // r
+
     print(count)
 
 
