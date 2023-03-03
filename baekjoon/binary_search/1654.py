@@ -22,7 +22,9 @@ while start <= end:
 
 print(ans)
 
-
+# 반례
+# 5 11
+# 60 30 20 15 12
 
 
 
