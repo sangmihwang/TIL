@@ -1,8 +1,8 @@
 def carrot(N, Ci):
     dif = 1000
     ans = -1
-    for a in range(1, N - 1):           # 첫번째 경계 a
-        for b in range(a + 1, N):       # 두번째 경계 b
+    for a in range(1, N - 1):               # 첫번째 경계 a
+        for b in range(a + 1, N):           # 두번째 경계 b
             s = Ci[:a]
             m = Ci[a:b]
             l = Ci[b:]
@@ -19,6 +19,7 @@ for t in range(1, T+1):
     N = int(input())
     Ci = list(map(int, input().split()))
     Ci.sort()
+
 
     print(f'#{t} {carrot(N, Ci)}')
 
