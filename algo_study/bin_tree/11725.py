@@ -11,6 +11,7 @@ def DFS(n):
             parent[i] = n
             DFS(i)
 
+
 N = int(sys.stdin.readline())
 Tree = [[] for _ in range(N+1)]
 parent = [0] * (N + 1)              # 인덱스 맞추기 위해 +1

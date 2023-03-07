@@ -10,6 +10,7 @@ for _ in range(100):
 left = [0] * len(N)
 right = [0] * len(N)
 
+
 for i in range(len(pre)-1):
     if left[pre[i]] == 0:
         left[pre[i]] = pre[i+1]
