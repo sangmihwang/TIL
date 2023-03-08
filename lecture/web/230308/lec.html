@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 1px solid #000;
+      color: black;
+      background-color: rgba(155, 50, 155, 0.333);
+      text-align: center;
+    }
+
+    .static {
+      position: relative;
+      background-color: green;
+      top: 100px;
+      left: 100px;
+    }
+
+    /* 내가 가야할 위치로부터 position 설정 */
+    .relative {
+      position: relative;
+      background-color: red;
+      top: 100px;
+      left: 100px;
+    }
+
+    .absolute {
+      position: absolute;
+      background-color: blue;
+      color: white;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="box">static</div>
+  <div class="box static">static</div>
+  <dic class="box relative">relative</dic>
+  <dic class="box relative absolute">absolute</dic>
+  <!-- 아무 일 없는 것처럼 보임 -->
+  <dic class="box relative absolute">absolute</dic>
+  
+</body>
+</html>

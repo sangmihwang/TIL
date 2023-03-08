@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color: black;
+    }
+
+    /* + 결합자 : 인접 형제 선택자 
+    p + p : p 다음 캐그가 p 일 때 적용 */
+    p + p {
+      color: red;
+    }
+
+    /* ~ 결합자 :  후손 선택자 또는 일반 형제 선택자*/
+    /* 특정 속성 뒤에 나오는 모든 요소들 */
+    /* p태그 뒤어 나오는 모든 span 태그 */
+		p ~ span {
+      color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <span>0</span> 
+  <p>1</p>
+  <p>2</p>
+  <span>3</span>
+  <p>4</p>
+  <div class="box">
+    <p>5</p>
+  </div>
+  <article>기사</article>
+  <ul>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+  </ul>
+  <span>9</span>
+</body>
+</html>
