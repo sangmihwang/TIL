@@ -52,17 +52,22 @@ article h2{
 }
 
 article h3{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   float: left;
   border: 1px solid #3085f5;
   width: 100px;
   height: 100px;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
+  margin-top: 30px;
+
 }
 
-article h3 {
-  margin-top: 0;
+.flex-space-around {
+  /* item 사이에 동일한 여백을 적용 */
+  /* 양 끝에는 item사이 여백의 1/2 */
+  /* 마진처럼 보임 */
+  justify-content: space-around;
 }
 
 article p {
@@ -83,4 +88,5 @@ footer {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
+  clear: left;
 }
