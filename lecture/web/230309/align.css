@@ -1,0 +1,39 @@
+.container {
+  background-color: cadetblue;
+  height: 300px;
+  display: flex;
+
+  /* align-items: center;
+  justify-content: center; */
+
+
+}
+
+.item {
+  background-color: tan;
+  border: 1px solid black;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.order1 {
+  order: 1;  
+}
+
+.order2 {
+  order: 2;  
+}
+
+.order3 {
+  order: 3;  
+}
+
+/* 늘어남  */
+.grow1 {
+  flex-grow: 1;
+}
+ /* 늘어나는 비율 숫자로 정함 */
+.grow3 {
+  flex-grow: 3;
+}
+

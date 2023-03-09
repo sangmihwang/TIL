@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  /* item에 넣으면 적용 안됨 */
+  /* flex-direction: column-reverse; */
+  
+  flex-wrap: wrap;
+  /* nowrap이면 짜부됨 */
+  justify-content: flex-end;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: limegreen;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 50px;
+}
