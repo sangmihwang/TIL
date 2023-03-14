@@ -1,4 +1,4 @@
-"""first_pjt URL Configuration
+"""firstpjt URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,15 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from articles import views
-from firstapp import views
 
 urlpatterns = [
     # 127.0.0.1:8000/admin/ 으로 요청을 보냈을 때 응답한다.
     path('admin/', admin.site.urls),
-    # path('articles/', views.index),
-    path('test/', views.index),
-    path('firstapp/', views.templates),
-    # path('firstapp/first/', views.first),
-    path('firstapp/hwA/', views.hwA)
 ]
