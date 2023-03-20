@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>게시글 상세</h1>
+  <h3>No.{{ article.pk }}</h3>
+  <hr>
+  <p>글제목: {{ article.title }}</p>
+  <p>글내용: {{ article.content }}</p>
+
+  <p>생성일시 : {{ article.created_at }}</p>
+  <p>수정일시 : {{ article.updated_at }}</p>
+
+{% endblock content %}
