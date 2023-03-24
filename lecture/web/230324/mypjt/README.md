@@ -14,8 +14,10 @@ detail.html 작성 과정에서의 어려움
 - 저장한 이미지가 표기되지 않는 상황
 
   1. media 파일의 경로를 settings.py에 지정해주지 않아서 이미지를 불러올 곳이 없었음. settings.py에 이미지 파일 경로를 지정해주었더니 media 폴더가 자동 생성되고 거기에 create에서 저장한 이미지 파일이 자동 업로드 됨.
+    + 또한 프로젝트의 url에도 static 경로를 추가해주어야 한다
   2. {{form.as_p}} 는 사용자의 입력을 받기 위한 목적으로 사용되기 때문에 detail.html이 아니라 create.html에 사용하는 것이 적합함! 
   3. 처음에 actor_image가 아니라 그냥 image로 받으려고 해서 계속 안됐음. 반드시 models.py에 작성한 이름 그대로 가져와야함
+   
 
 ## update.html
 
