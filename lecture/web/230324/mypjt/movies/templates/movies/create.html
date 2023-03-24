@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="fw-bold">CREATE</h1>
+  <form action="{% url 'movies:create' %}" method='POST' enctype='multipart/form-data'>
+    {% csrf_token %}
+
+    {{ form.as_p }}
+    <input type="submit" value= "작성"/>
+  </form>
+  
+  <a href="{% url 'movies:index' %}">목록</a>
+{% endblock content %}
+
+

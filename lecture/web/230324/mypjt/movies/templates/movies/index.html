@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <h1 class='fw-bold'>INDEX</h1>
+  <a href="{% url 'movies:create' %}">CREATE</a>
+  <hr>
+  {% for movie in movies %}
+  No.{{movie.id}}
+  <a href="{% url 'movies:detail' movie.pk %}">{{movie.title}}</a>
+  <hr>
+  {% endfor %}
+{% endblock content %}
+
