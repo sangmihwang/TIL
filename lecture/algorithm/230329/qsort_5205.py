@@ -30,5 +30,4 @@ for t in range(1, T+1):
     arr = list(map(int, input().split()))
     tmp = [0] * N           # 복사본 생성성
     qsort(arr, 0, N-1)
-    print(arr)
-    # print(arr[500000])
+    print(f'#{t} {arr[N//2]}')
