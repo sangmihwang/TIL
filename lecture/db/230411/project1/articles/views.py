@@ -5,11 +5,38 @@ from .models import Article, Comment, Hashtag
 from .forms import ArticleForm, CommentForm
 from django.contrib.auth import update_session_auth_hash, get_user_model
 
+# 쿼리문 보기
+# 1. views.py 에서 django 내부 모듈을 이용해서 print하는 방법
+# 2. Logger 를 이용해서 Log로 남기는 방법
+
+from django.db import connection
+from django.db import reset_queries
+
+
 # Create your views here.
 @require_safe
 def index(request):
-    articles = Article.objects.order_by('-pk')
+    reset_queries()
     
+    articles = Article.objects.order_by('-pk')
+    print(articles)
+    
+    for i in range(len(articles)):
+        print(articles[i].title)
+        
+    # N + 1 Problem
+    for article in articles:
+        print(article.title)
+        print(article.user.username) 
+        
+        
+    
+    # RESET 후 사용한 모든 쿼리문을 query_info 변수에 할당
+    query_info = connection.queries
+    # 반복하며 출력
+    
+    for query in query_info:
+        print(query['sql'])
     context = {
         'articles': articles,
     }
