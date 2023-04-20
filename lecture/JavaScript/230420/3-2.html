@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+    // a tag 생성 및 컨텐츠 추가
+    const aTag = document.createElement('a')
+    aTag.innerText = 'SSAFY'
+    // 이벤트의 기본 동작을 막음
+    aTag.addEventListener('click', function (event) {
+        event.preventDefault()
+    })
+
+    // a 태그의 href 속성 추가
+    aTag.setAttribute('href', 'http://www.ssafy.com')
+    console.log(aTag.getAttribute("href"))
+
+    // body 태그의 자식 태그로 a 태그 추가
+    const body = document.querySelector('body')
+    body.appendChild(aTag)
+
+
+    
+
+  </script>
+</body>
+</html>
