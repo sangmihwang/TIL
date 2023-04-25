@@ -16,7 +16,7 @@ def article_list(request):
         serializer = ArticleListSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
-            return Response(serializer.data, status=statue.HTTP_201_CREATED)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['GET', 'DELETE', 'PUT'])
 def article_detail(request, article_pk):
