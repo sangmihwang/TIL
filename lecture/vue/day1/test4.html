@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ message }}</p>
+      <button v-on:click="changeMsg">메시지 변경</button>
+    </div>
+    <br />
+    
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        data: {
+          message: "Hello Vue.js!"
+        },
+        methods: {
+          changeMsg: function() {
+            this.message = '안녕하세요 Vue.js!'
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

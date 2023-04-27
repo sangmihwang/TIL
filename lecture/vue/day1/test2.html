@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="i in arr">{{ i.text }}</li>
+      </ul>
+    </div>
+    <br />
+    
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        data: {
+          arr: [
+            { text: '반복문 1'},
+            { text: '반복문 2'},
+            { text: '반복문 3'}
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>

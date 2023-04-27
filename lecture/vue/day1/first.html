@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Popular Movies</h1>
+        <div v-for="item in movieinfo.results">
+            <p v-if = "item.vote_average >= 8.0">
+                {{ item }}
+            </p>
+        </div>
+    </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const newDiv = document.createElement('div')
+        newDiv.textContent = 'test'
+        document.body.appendChild(newDiv)
+        
+        // app: Vue 인스턴스
+        // el 옵션: 요소 선택자 (클래스나 아이디 등)
+        // data 옵션: 인스턴스가 사용할 데이터
+        // template: 요소의 DOM을 직접 수정(== innerHTML)
+        const app = new Vue({
+            el: newDiv,
+            data: {
+                message: "메세지"
+            },
+            template: '<span>{{ message }}</span>',
+            methods: {
+                printMessage() {
+                    console.log(this.message)
+                }
+            }
+        })
+
+        const btn = document.createElement("button")
+        btn.textContent = '클릭'
+        newDiv.appendChild(btn)
+         
+    </script>
+</body>
+</html>
