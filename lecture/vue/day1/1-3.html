@@ -24,8 +24,8 @@
 <body>
   <div id="app">
     <h1>버튼을 골라주세요</h1>
-    <button v-bind:class="{ selected: isSelected1 }" v-on:click="isSelected1 = true">선택 1</button>
-    <button v-bind:class="{ selected: isSelected2 }" v-on:click="isSelected2 = true">선택 2</button>
+    <button v-bind:class="{ selected: isSelected1 }" v-on:click="switchBtn1">선택 1</button>
+    <button v-bind:class="{ selected: isSelected2 }" v-on:click="switchBtn2">선택 2</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
@@ -36,6 +36,17 @@
       data: {
         isSelected1: false,
         isSelected2: false
+      },
+      methods: {
+        switchBtn1: function() {
+            console.log(1)
+            this.isSelected2 = false
+            this.isSelected1 = !this.isSelected1
+        },
+        switchBtn2: function() {
+            this.isSelected1 = false
+            this.isSelected2 = !this.isSelected2   
+        }
       }
     })
   </script>
