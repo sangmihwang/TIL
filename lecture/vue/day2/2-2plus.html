@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="buttonRow">
-         <div class="btn" v-bind:class="{ selected: isSelected3 }" @click="select3()">
+          <div class="btn" v-bind:class="{ selected: isSelected3 }" @click="select3()">
             <span class="type">3</span>
           </div>
           <div class="btn" v-bind:class="{ selected: isSelected4 }" @click="select4()">
@@ -108,21 +108,27 @@
         isSelected1: false,
         isSelected2: false,
         isSelected3: false,
-        isSelected4: false,
+        isSelected4: false
       },
       methods: {
         select1() {
-            this.isSelected1 = !this.isSelected1
+          this.isSelected1 = !this.isSelected1
         },
         select2() {
-            this.isSelected2 = !this.isSelected2
+          this.isSelected2 = !this.isSelected2
         },
         select3() {
-            this.isSelected3 = !this.isSelected3
+          this.isSelected3 = !this.isSelected3
         },
         select4() {
-            this.isSelected4 = !this.isSelected4
+          this.isSelected4 = !this.isSelected4
         },
+        clear() {
+          this.isSelected1 = false
+          this.isSelected2 = false
+          this.isSelected3 = false
+          this.isSelected4 = false
+        }
       }
     })
   </script>
